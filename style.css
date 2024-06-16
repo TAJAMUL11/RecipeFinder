@@ -144,17 +144,17 @@ header #btn_signIn:active{
 
 .Home_header h1{
     color: var(--Text_Color_ONE);
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
     text-shadow: 0 0.3rem 0.5rem var(--Text_Color_ONE);
 }
 .Home_header h1::first-letter{
-    font-size: 5.5rem;
+    font-size: 6rem;
 }
 
 .Home_header .headerDetails{
     color: var(--Text_Color_ONE);
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: .7rem;
     text-align: center;
     width: 75%;
@@ -204,6 +204,21 @@ header #btn_signIn:active{
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0.5rem 1rem 1rem var(--Text_Color_ONE));
+    animation: rotateAll 2s ease-in-out infinite alternate;
+    
+}
+
+@keyframes rotateAll {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.95) rotateX(25deg);
+        filter: drop-shadow(1rem 2rem 2rem var(--Text_Color_ONE));
+    }
+    100%{
+        transform: scale(1);
+    }
     
 }
 
@@ -828,8 +843,11 @@ body .footer{
         font-size: 1.1rem;
         margin: 1.1rem 0;
     }
+    header{
+        padding: 4%;
+    }
     #Home .Home_header{
-        margin-top: 3.5rem;
+        margin-top: 6rem;
         backdrop-filter: blur(0px);
     }
     .Home_header h1{
@@ -865,11 +883,13 @@ body .footer{
 
 @media screen and (max-width: 495px){
 
-    #Home .Home_header{
-        margin-top: 5rem;
-    }
     .Home_header h1{
-        font-size: 1.85rem;
+        font-size: 1.75rem;
+    }
+    .Home_header .headerDetails{
+        font-size: 0.9rem;
+        line-height: 1.6;
+
     }
 
     .Home_header .btnExplore{
@@ -880,7 +900,7 @@ body .footer{
     }
 
     .mediaBoxes img{
-        width: 95vw;
+        width: 100%;
 
     }
 
