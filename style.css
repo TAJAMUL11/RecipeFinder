@@ -210,16 +210,14 @@ header #btn_signIn:active{
 
 @keyframes moveOn{
     0%{
-       transform: rotateX(25deg);
+       transform: rotateX(0);
     }
-    30%{
-       transform: rotateY(-25deg);
+    50%{
+       transform: rotateX(35deg);
     }
-    60%{
-       transform: rotateX(-35deg);
-    }
+
     100%{
-       transform: rotateY(35deg);
+       transform: rotateX(0);
     }
 
   
@@ -815,7 +813,7 @@ body .footer{
         font-size: 3rem;
     }
     .mediaBoxes img{
-        width: 45vw;
+        width: 65vw;
 
     }
     .recipeHeading h2{
@@ -854,8 +852,11 @@ body .footer{
         font-size: 2.3rem;
     }
     .mediaBoxes img{
-        width: 55vw;
+        width: 85vw;
 
+    }
+    #result img{
+        width: 70%;
     }
     .weekly_heading h2{
         font-size: 1.8rem;
@@ -885,17 +886,11 @@ body .footer{
         backdrop-filter: blur(0px);
     }
     .Home_header h1{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .Home_header h1::first-letter{
         font-size: 4rem;
     }
-    .Home_header .headerDetails{
-        font-size: 0.9rem;
-        padding: .3rem;
-        line-height: 1.6;
-    }
-    
     .Home_header .btnExplore{
         width: 190px;
     }
@@ -904,24 +899,15 @@ body .footer{
     }
 
     .mediaBoxes img{
-        width: 65vw;
+        width: 90vw;
 
     }
 
-    .recipeHeading h2{
-        font-size: 2.1rem;
-
-    }
-    .recipeHeading p{
-        font-size: 0.9rem;
-    }
     .search_container #inputBox{
         width: 270px;
-        font-size: 1rem;
     } 
     .search_container #inputBtn{
         padding: 1.1rem;
-        font-size: 1rem;
     } 
     #result .details{
         padding: 0.5rem;
