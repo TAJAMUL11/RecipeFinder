@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo"><i class='bx bxs-bowl-hot'></i> MacFood</a>
+        <i class='bx bx-menu' id="menuIcon"></i>
+        <nav class="navbar">
+            <a href="#Home" class="active">Home</a>
+            <a href="#recipesSection">Recipes</a>
+            <a href="#weeklyRecipes">Blogs</a>
+            <a href="#footer">About Us</a>
+            <a href="#" class="SignInLink">Sign In</a>
+
+        </nav>
+        <a id="btn_signIn" href="#">Sign In</a>
+    </header>
+
+     <!-- About section -->
+
+    <section id="Home">
+        <div class="Home_header">
+            <h1>Hungry? We Got You Covered.</h1>
+            <p class="headerDetails">Discover 1000+ Recipes on our platform. From fridge-foraging inspiration to global cuisine cravings, we got your back.</p>
+            <button class="btnExplore"><a href="#recipesContainer">Explore Recipes</a></button> 
+        </div>
+        <div class="homeMedia">
+            <div class="mediaBoxes">
+                <img src="./Images/ImageHome1.png" alt="Image" width="500" height="500">
+            </div>                
+        </div>
+    </section>
+                                <!-- recipe section -->
+
+    <section id="recipesSection">
+            <div class="recipeHeading">
+                <h2>Search recipes here</h2>
+                <p>Discover 1000+ recipes in your hand, easiest way to cook </p>
+            </div>
+            <div class="recipeContainer">
+                <div class="search_container">
+                    <input type="text" id="inputBox" placeholder="Enter dish name">
+                    <button id="inputBtn">Search</button>
+                </div>
+                <div id="result">
+
+                </div>
+            </div>
+    </section>
+
+                    <!-- Weekly Recipes -->
+
+    <section id="weeklyRecipes">
+        <div class="weekly_heading">
+            <h2>popular recipes of the week</h2>
+            <p>Our most popular recipes of the week</p>
+        </div>
+        <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./Images/avocado-toast.jpg" alt="Avacado" width="640" height="423">
+                <h4>Avacado Toast</h4>
+                <a href="#">Recipe</a>
+            </div>
+            <div class="swiper-slide">
+                <img src="./Images/saladGreek.jpg" alt="Salad" width="640" height="426">
+                <h4>Greek Salad</h4>
+                <a href="#">Recipe</a>
+            </div>
+            <div class="swiper-slide">
+                <img src="./Images/hamburgerSnack.jpg" alt="Burger" width="640" height="423">
+                <h4>Hamburger</h4>
+                <a href="#">Recipe</a>
+            </div>
+            <div class="swiper-slide">
+                <img src="./Images/Biryani.jpg" alt="Biryani" width="640" height="427">
+                <h4>Biryani</h4>
+                <a href="#">Recipe</a>
+            </div>
+            <div class="swiper-slide">
+                <img src="./Images/Shwarma.jpg" alt="Shawarma" width="640" height="407">
+                <h4>Shawarma</h4>
+                <a href="#">Recipe</a>
+            </div>
+        </div>
+    </div>
+ 
+    </section>
+    
+                        <!-- Footer -->
+     <footer class="footer" id="footer">
+        <div class="footerNav">
+            <div class="footerLogo">
+                <a href="#Home" class="Flogo"><i class='bx bxs-bowl-hot'></i> MacFood</a>
+            </div>
+            <div class="footer__icons">
+                <a href="#"><i class='bx bxl-gmail' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+            </div>
+         </div>
+         <div class="footerBarRecipes">
+            <p>Recipes</p>
+            <div class="footrecipes">
+                <a href="#">Biryani</a>
+                <a href="#">Tandoori</a>
+                <a href="#">Steak</a>
+                <a href="#">Dal Fry</a>
+                <a href="#">Butter Chicken</a>
+            </div>
+         </div>
+         <div class="footerSupport">
+            <p>Support</p>
+            <div class="footSupport">
+                <a href="#">API</a>
+                <a href="#">Products</a>
+                <a href="#">Donate</a>
+                <a href="#">TroubleShoot</a>
+                <a href="#">Development</a>
+            </div>
+         </div>
+
+      <div class="footer__container">
+        <h4>Subscribe To Get Daily Updates</h4>
+                <form action="#" class="formFooter">
+                    <input type="email" placeholder="Enter your email" />
+                    <button id="subBtn">Subscribe</button>
+                </form>  
+            <div class="footerRights">
+                <p>&copy;2024 Tajamul Wani | All rights reserved</p>
+            </div>
+      </div>
+    </footer>
+    <!-- Introducing my recipe application which helps user find the best recipe information in just one click. The user need to put the name of the dish and the application will fetch all details related to the dish. It includes name, origin, ingredients, instructions and videos. I have used Vanilla Front end technologies (HTML, Css and JavaScript). For image slider, i have used Swiper.js library only. -->
+  
+<script src="script.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>   
+</body>
+</html>
+
