@@ -123,7 +123,7 @@ header #btn_signIn:active{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 0.5rem 0;
     background-color: var(--Text_Color_TWO);
     background-image: url(./Images/HomeBGImage.jpg);
     background-position: top;
@@ -134,52 +134,54 @@ header #btn_signIn:active{
 #Home .Home_header{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 1rem 0;
+    flex-wrap: wrap;
     backdrop-filter: blur(3px);
-   
+    margin-left: 2.5rem; 
 }
 
-.Home_header h1{
+.Home_header h1, #headline{
     color: var(--Text_Color_ONE);
-    font-size: 3.5rem;
-    font-weight: 800;
-    text-shadow: 0 0.3rem 0.5rem var(--Text_Color_ONE);
+    font-size: 3.67rem;
+    font-weight: 700; 
 }
 .Home_header h1::first-letter{
-    font-size: 6rem;
+    font-size: 5rem;
 }
+.Home_header #headline{
+    white-space: wrap;
+    margin-left: 4rem;
+}
+
 
 .Home_header .headerDetails{
     color: var(--Text_Color_ONE);
-    font-size: 1.2rem;
-    padding: .7rem;
-    text-align: center;
-    width: 75%;
-    line-height: 1.7;
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.6;
     font-weight: 600;
+    width: 80%;
+    padding: 0.5rem;
 }
 
-.headerDetails .lineRecipe{
-    white-space: wrap;
-}
 
 .Home_header .btnExplore{
     border: none;
     outline: none;
     padding: 1.3rem;
-    width: 230px;
+    width: 250px;
     border-radius: 5px;
     box-shadow: 0 0 .5rem var(--btn_color);
     background-color: var(--btn_color);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    margin-left: 5rem ;
 
 }
 .btnExplore a{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--Text_Color_TWO);
     text-decoration: none;
     font-weight: 700;
@@ -200,27 +202,13 @@ header #btn_signIn:active{
 }
 
 .mediaBoxes img{
-    width: 37vw;
+    width: 40vw;
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0.5rem 1rem 1rem var(--Text_Color_ONE));
-    animation: rotateAll 2s ease-in-out infinite alternate;
-    
 }
 
-@keyframes rotateAll {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(0.95) rotateX(25deg);
-        filter: drop-shadow(1rem 2rem 2rem var(--Text_Color_ONE));
-    }
-    100%{
-        transform: scale(1);
-    }
-    
-}
+
 
 /*========================Recipe section =============================*/
  body #recipesSection{
@@ -546,7 +534,7 @@ body .footer{
     padding: 1rem 0.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0 1rem;
+    gap: 0 0.5rem;
   
 }
 
@@ -733,20 +721,14 @@ body .footer{
         margin: .6rem 1rem;
         
     }
-    .Home_header h1{
-        font-size: 2.5rem;
+    .Home_header h1, #headline{
+        font-size: 3.4rem;
     }
-    .Home_header h1::first-letter{
-        font-size: 5rem;
-    }
-    
+ 
     .Home_header .btnExplore{
-        width: 210px;
         margin-top: 1rem;
     }
-    .btnExplore a{
-        font-size: 1.2rem;
-    }
+    
 
     .swiper-slide img{
         width: 50%;
@@ -804,14 +786,17 @@ body .footer{
         flex-wrap: wrap;
       }
     #Home .Home_header{
-        gap: 0.5rem 0;
-        margin-top: 4rem;
+        margin-top: 7rem;
+        backdrop-filter: blur(0px);
+        margin-left: 1rem;
     }
-    .Home_header h1{
-        font-size: 3rem;
+
+    .Home_header .headerDetails{
+        width: 85%;
+        padding: 0;
     }
     .mediaBoxes img{
-        width: 65vw;
+        width: 60vw;
 
     }
     .recipeHeading h2{
@@ -830,15 +815,11 @@ body .footer{
     }
     body .footer{
         grid-template-columns: repeat(3, auto);
-      
+
     }
-     
 }
 
 @media screen and (max-width: 675px){
-    html{
-        font-size: 88%;
-    }
     .navbar a{
         font-size: 1.1rem;
         margin: 1.1rem 0;
@@ -846,15 +827,12 @@ body .footer{
     header{
         padding: 4%;
     }
-    #Home .Home_header{
-        margin-top: 6rem;
-        backdrop-filter: blur(0px);
-    }
-    .Home_header h1{
-        font-size: 2.3rem;
+
+    .Home_header #headline{
+        margin-left: 3rem;
     }
     .mediaBoxes img{
-        width: 85vw;
+        width: 75vw;
 
     }
     #result img{
@@ -866,42 +844,41 @@ body .footer{
     .swiper-slide img{
         width: 60%;
     }
-    .footerLogo .Flogo{
-        font-size: 1.5rem;
-        
-    }
-    .Flogo i{
-        font-size: 3rem;
-    }
     body .footer{
-        font-size: 97%;
-        grid-template-columns: repeat(2, auto);
+        font-size: 98%;
+        padding: 0.5rem;
+        gap: 2rem 1rem;
          
+    }
+    .footer .footerNav{
+        grid-column: 1/5 ;
+        padding: 0.5rem;
+    }
+    .footer .footer__container{
+        grid-column: 1 /5 ;
+        padding: 0.5rem;
+    }
+    .footer .footerBarRecipes{
+        grid-column: 2/3 ;
     }
 
 }
 
 @media screen and (max-width: 495px){
 
-    .Home_header h1{
-        font-size: 1.75rem;
+    .Home_header h1, #headline{
+        font-size: 2.5rem;
     }
     .Home_header .headerDetails{
-        font-size: 0.9rem;
-        line-height: 1.6;
-
-    }
-
-    .Home_header .btnExplore{
-        width: 190px;
-    }
-    .btnExplore a{
+        width: 100%;
         font-size: 1rem;
     }
 
+    .Home_header .btnExplore{
+        width: 210px;
+    }
     .mediaBoxes img{
-        width: 100%;
-
+        width: 95%;
     }
 
     .search_container #inputBox{
@@ -921,21 +898,7 @@ body .footer{
         grid-template-columns: auto;
     }
     .swiper-slide img{
-        width: 70%;
-    }
-
-    body .footer{
-        font-size: 100%;
-        grid-template-columns: auto;
-        gap: 1rem 0;
-         
-    }
-    .footerLogo .Flogo{
-        font-size: 2.1rem;
-        
-    }
-    .Flogo i{
-        font-size: 4rem;
+        width: 75%;
     }
 
 }

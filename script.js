@@ -89,8 +89,30 @@ const swiper = new Swiper('.swiper', {
     effect : 'slide',
     loop : true,
     autoplay : {
-        delay : '2000'
+        delay : '2500'
     },
   });
+
+  /* ======================Scroll animations =================*/
+ScrollReveal({
+    reset : true,
+    distance : '-150px',
+    duration: 1500,
+    delay : 500,
+
+});
+
+ScrollReveal().reveal('.mediaBoxes img, .Home_header .btnExplore',{
+    origin : 'top',
+});
+ScrollReveal().reveal('.recipeHeading h2, .Home_header h1, #headline',{
+    origin : 'bottom',
+});
+ScrollReveal().reveal('.recipeHeading p, .weekly_heading p,.footer__icons a',{
+    origin : 'right',
+});
+
+
+
 
  
