@@ -105,10 +105,8 @@ ScrollReveal({
 ScrollReveal().reveal('.mediaBoxes img, .Home_header .btnExplore',{
     origin : 'top',
 });
-ScrollReveal().reveal('.recipeHeading h2, .Home_header h1, #headline',{
-    origin : 'bottom',
-});
-ScrollReveal().reveal('.recipeHeading p, .weekly_heading p,.footer__icons a',{
+
+ScrollReveal().reveal('.recipeHeading p, .weekly_heading p, .footer__container h4',{
     origin : 'right',
 });
 
