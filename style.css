@@ -145,7 +145,7 @@ header #btn_signIn:active{
 .Home_header h1, #headline{
     color: var(--Text_Color_ONE);
     font-size: 3.8rem;
-    font-weight: 700; 
+    font-weight: 900; 
 }
 .Home_header h1::first-letter{
     font-size: 5rem;
@@ -374,13 +374,6 @@ ul li{
     white-space: wrap;
 }
 
-
-#result .btnshow{
-    width: 80%;
-    display: flex;
-    justify-content: right;
-    flex-wrap: wrap;
-}
 #result #show-recipe{
     border: none;
     background-color: var(--btn_color);
@@ -424,10 +417,9 @@ ul li{
 
 #recipe h2{
     color: var(--Text_Color_TWO);
-    font-size: 1.7rem;
+    font-size: 2.1rem;
     text-align: center;
     font-weight: 700;
-    border-bottom: 2px solid var(--Text_Color_TWO);
     width: 30%;
 }
 
@@ -440,10 +432,13 @@ ul li{
 }
 
 #recipe #youtube-play{
+    display: block;
+    width: 140px;
+    text-align: center;
     text-decoration: none;
     background-color: rgb(216, 15, 65);
-    padding: 0.5rem;
-    margin: 0.5rem;
+    padding: 0.8rem;
+    margin: 0 auto;
     color: var(--Text_Color_TWO);
     border-radius: 5px;
     box-shadow: 0 0 0.5rem rgb(216, 15, 65);
