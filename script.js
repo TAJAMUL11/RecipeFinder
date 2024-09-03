@@ -29,7 +29,7 @@ for(let i in myMeal){
         ingredients.push(`${measure} ${ingredient}`);
     }
 }
-
+result.style.minHeight = '100vh'
 result.innerHTML = `<img src = "${myMeal.strMealThumb}">
 <div class = 'details'>
     <h2>${myMeal.strMeal}</h2>
