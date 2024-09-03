@@ -11,6 +11,8 @@ searchBtn.addEventListener('click', (e) =>{
     let userInput = document.getElementById('inputBox').value;
     if(userInput.length == 0){
         result.innerHTML = `<h2 class = 'h2'> Input box cannot be empty</h2>`;
+        result.style.minHeight = "30px"
+        
     }
     else{
         fetch(url + userInput)
@@ -70,6 +72,7 @@ hideRecipe.addEventListener('click', () => {
   
 }).catch(() => {
     result.innerHTML = `<h2 class = 'h2'>Invalid input</h2>`
+    result.style.minHeight = "30px"
 })
 
 }
@@ -106,7 +109,7 @@ ScrollReveal().reveal('.mediaBoxes img, .Home_header .btnExplore',{
     origin : 'top',
 });
 
-ScrollReveal().reveal('.recipeHeading p, .weekly_heading p, .footer__container h4',{
+ScrollReveal().reveal('.recipeHeading p, .weekly_heading h2, .footer__container h4',{
     origin : 'right',
 });
 
