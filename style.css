@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 *{
     padding: 0;
     box-sizing: border-box;
@@ -145,11 +146,11 @@ header #btn_signIn:active{
 .Home_header h1, #headline{
     color: var(--Text_Color_ONE);
     font-size: 3.8rem;
-    font-weight: 900;
-    font-style: italic;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
 }
 .Home_header h1::first-letter{
-    font-size: 5rem;
+    font-size: 7rem;
 }
 .Home_header #headline{
     white-space: wrap;
@@ -162,7 +163,7 @@ header #btn_signIn:active{
     font-size: 1.1rem;
     text-align: justify;
     line-height: 1.6;
-    font-weight: 600;
+    font-weight: 800;
     width: 80%;
     padding: 0.5rem;
 }
@@ -208,32 +209,11 @@ header #btn_signIn:active{
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0.2rem .7rem .5rem var(--Text_Color_ONE));
-    animation: moveOn 30s ease-in-out 1s infinite forwards;
     transition: all 2s ease-in-out;
-
 }
-
-@keyframes moveOn {
-    0%{
-        transform: rotateZ(0);
-    }
-    33%{
-        transform: rotateZ(90deg);
-    }
-    66%{
-        transform: rotateZ(360deg);
-    }
-    100%{
-        transform: rotateZ(0);
-    }
-    
-}
-
-
 
 /*========================Recipe section =============================*/
  body #recipesSection{
-    /* min-height: 100vh; */
     background-color: var(--Background_Main);  
     display: flex;
     flex-direction: column;
@@ -480,8 +460,7 @@ body #weeklyRecipes{
     max-width: 100%;
     padding: 1.3rem;
     overflow-x: hidden;
-    background-color: #2a5846fb;
-    background-image: url(./Images/MacFoodC.png);
+    background-image: url(./Images/MacFood.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -498,13 +477,7 @@ body #weeklyRecipes{
     font-weight: 700;
     color: var(--Text_Color_TWO);
     text-transform: capitalize;
-    margin-bottom: .4rem;
-}
-.weekly_heading p{
-    color: var(--Text_Color_TWO);
-    font-size: 1.2rem;
-    opacity: 0.75;
-    margin-bottom: .8rem;
+    margin-bottom: .6rem;
 }
 
 #weeklyRecipes .swiper-slide{
@@ -525,7 +498,7 @@ body #weeklyRecipes{
 
 .swiper-slide h4{
     font-size: 1.6rem;
-    color: var(--Text_Color_TWO);
+    color: var(--Text_Color_ONE);
     font-weight: 800;
     margin: .6rem 0;
 }
@@ -552,7 +525,7 @@ body #weeklyRecipes{
 /*==========================Footer========================*/
 
 body .footer{
-    background-color: #fefefee6;
+    background-color: var(--Background_Main);
     padding: 1rem 0.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -569,7 +542,7 @@ body .footer{
 }
 
 .footerLogo .Flogo{
-    color: var(--Text_Color_ONE);
+    color: var(--Text_Color_TWO);
     text-decoration: none;
     cursor: pointer;
     font-weight: 900;
@@ -612,7 +585,7 @@ body .footer{
     flex-wrap: wrap;
 }
 .footerBarRecipes p{
-    color: var(--Text_Color_ONE);
+    color: var(--Text_Color_TWO);
     font-size: 1.5rem;
     margin-bottom: 0.8rem;
     font-weight: 600;
@@ -628,7 +601,7 @@ body .footer{
 
 }
 .footrecipes a{
-    color: var(--Text_Color_ONE);
+    color: var(--Text_Color_TWO);
     text-decoration: none;
     opacity: 0.9;
     transition: all 0.2s ease-in-out;
@@ -647,7 +620,7 @@ body .footer{
     flex-wrap: wrap;
 }
 .footerSupport p{
-    color: var(--Text_Color_ONE);
+    color: var(--Text_Color_TWO);
     font-size: 1.5rem;
     margin-bottom: 0.8rem;
     font-weight: 600;
@@ -662,7 +635,7 @@ body .footer{
 
 }
 .footSupport a{
-    color: var(--Text_Color_ONE);
+    color: var(--Text_Color_TWO);
     text-decoration: none;
     opacity: 0.9;
     transition: all 0.2s ease-in-out;
@@ -683,7 +656,7 @@ body .footer{
     flex-wrap: wrap;
 }
 .footer__container h4{
-    color: var(--Text_Color_ONE);
+    color: var(--Text_Color_TWO);
     font-weight: 700;
     font-size: 1.1rem;
 }
@@ -699,14 +672,15 @@ body .footer{
     border-radius: 5px;
     border: 2px solid var(--btn_color);
     outline: none;
-    color: var(--Text_Color_ONE);
+    color: var(--Text_Color_TWO);
     backdrop-filter: blur(10px);
     font-size: 1rem;
     font-weight: 600;
+    background-color: transparent;
 
 }
 .formFooter input::placeholder{
-    color: var(--Text_Color_ONE);
+    color: var(--Text_Color_TWO);
 }
 .formFooter  #subBtn{
     border: none;
@@ -725,7 +699,7 @@ body .footer{
     box-shadow: none;
 }
 .footerRights p{
-    color: var(--Text_Color_ONE);
+    color: var(--Text_Color_TWO);
     font-weight: 600;
     letter-spacing: 0.8px;
    

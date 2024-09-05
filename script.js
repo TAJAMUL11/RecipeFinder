@@ -105,11 +105,11 @@ ScrollReveal({
 
 });
 
-ScrollReveal().reveal('.mediaBoxes img, .Home_header .btnExplore',{
+ScrollReveal().reveal('.mediaBoxes img, .mediaBoxes img, .Home_header .btnExplore',{
     origin : 'top',
 });
 
-ScrollReveal().reveal('.recipeHeading p, .weekly_heading h2, .footer__container h4',{
+ScrollReveal().reveal('.recipeHeading p, .footer__container h4',{
     origin : 'right',
 });
 
