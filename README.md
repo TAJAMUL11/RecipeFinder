@@ -29,15 +29,8 @@ git clone <your-repo-url>
 cd Recipe_app
 ```
 
-2. The application uses an external API (TheMealDB) which doesn't require authentication. The API endpoint is configured in `config.js`:
+2. The application uses an external API (TheMealDB) which doesn't require authentication.
 
-```javascript
-const CONFIG = {
-    API_BASE_URL: 'https://www.themealdb.com/api/json/v1/1/search.php?s='
-};
-```
-
-3. Open `index.html` in your browser to run the application
 
 ### GitHub Pages Deployment
 
@@ -55,19 +48,6 @@ Recipe_app/
 ├── index.html          # Main HTML file
 ├── style.css           # Stylesheet
 ├── script.js           # Main JavaScript logic
-├── config.js           # Configuration (API endpoints)
-├── .gitignore          # Git ignore rules
-├── .env                # Environment file (for reference)
-├── README.md           # This file
-└── Images/             # Recipe and background images
-    ├── ImageHome1.png
-    ├── HomeBGImage.jpg
-    ├── SteakC.jpg
-    ├── saladGreek.jpg
-    ├── Big macC.jpg
-    ├── Biryani.jpg
-    ├── Shwarma.jpg
-    └── MacFood.png
 ```
 
 ## Browser Support
@@ -108,12 +88,12 @@ Recipe_app/
 
 ## Font Stack
 
-- Headlines: Playfair Display (serif)
-- Body: Inter (sans-serif)
+- Headlines: Outfit 
+- Body: Poppins (sans-serif)
 
 ## license
 
-Copyright © 2024 Tajamul Wani. All rights reserved.
+Copyright © 2026 Tajamul Wani. All rights reserved.
 
 ## Contact & Social
 
