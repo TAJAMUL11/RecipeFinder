@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3328"/>
+      <stop offset="55%" style="stop-color:#2a5846"/>
+      <stop offset="100%" style="stop-color:#1e4035"/>
+    </linearGradient>
+
+    <!-- Plate gradient -->
+    <linearGradient id="plateGrad" x1="0%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#dff0e8"/>
+    </linearGradient>
+
+    <!-- Gold accent -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f0a500"/>
+      <stop offset="100%" style="stop-color:#f7c948"/>
+    </linearGradient>
+
+    <!-- Leaf gradient -->
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6fcf97"/>
+      <stop offset="100%" style="stop-color:#27ae60"/>
+    </linearGradient>
+
+    <!-- Food warm gradient -->
+    <linearGradient id="foodGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f2c060"/>
+      <stop offset="100%" style="stop-color:#c97820"/>
+    </linearGradient>
+
+    <!-- Radial glow behind plate -->
+    <radialGradient id="plateGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4a9a70;stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#2a5846;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Drop shadow filter -->
+    <filter id="plateShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="itemShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0d2318" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- ===================== BACKGROUND ===================== -->
+  <rect width="1200" height="630" fill="url(#bgMain)"/>
+
+  <!-- Subtle grid texture -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="0.8">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+
+  <!-- Large decorative circles -->
+  <circle cx="980" cy="315" r="320" fill="url(#plateGlow)"/>
+  <circle cx="980" cy="315" r="280" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.06"/>
+  <circle cx="980" cy="315" r="240" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.04"/>
+
+  <!-- Background herb sprigs (decorative) -->
+  <g opacity="0.12" fill="#6fcf97">
+    <ellipse cx="80" cy="580" rx="24" ry="10" transform="rotate(-30,80,580)"/>
+    <ellipse cx="105" cy="565" rx="20" ry="9" transform="rotate(15,105,565)"/>
+    <ellipse cx="60" cy="562" rx="18" ry="8" transform="rotate(-55,60,562)"/>
+    <ellipse cx="1140" cy="60" rx="24" ry="10" transform="rotate(40,1140,60)"/>
+    <ellipse cx="1115" cy="75" rx="20" ry="9" transform="rotate(-20,1115,75)"/>
+    <ellipse cx="1155" cy="82" rx="18" ry="8" transform="rotate(65,1155,82)"/>
+  </g>
+
+  <!-- ===================== LEFT: TEXT CONTENT ===================== -->
+
+  <!-- Eyebrow label -->
+  <text x="72" y="198" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#6fcf97" letter-spacing="6" font-weight="600" opacity="0.85">RECIPE FINDER &amp; COOKING GUIDE</text>
+
+  <!-- Gold rule under eyebrow -->
+  <rect x="72" y="208" width="340" height="1.5" rx="1" fill="url(#goldGrad)" opacity="0.4"/>
+
+  <!-- App name — large, vertically centred -->
+  <text x="72" y="318" font-family="Georgia, 'Times New Roman', serif" font-size="118" font-weight="700" fill="#ffffff" filter="url(#textShadow)" letter-spacing="-3">Mac</text>
+  <text x="302" y="318" font-family="Georgia, 'Times New Roman', serif" font-size="118" font-weight="400" fill="url(#goldGrad)" filter="url(#textShadow)" letter-spacing="-3">Food</text>
+
+  <!-- Thick gold underline accent -->
+  <rect x="72" y="334" width="440" height="4" rx="2" fill="url(#goldGrad)" opacity="0.85"/>
+
+  <!-- Feature pills — spacious row below title -->
+  <g transform="translate(72, 390)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="168" height="46" rx="23" fill="#ffffff" opacity="0.08"/>
+    <rect x="0" y="0" width="168" height="46" rx="23" fill="none" stroke="#6fcf97" stroke-width="1.5"/>
+    <text x="84" y="29" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#6fcf97" text-anchor="middle" font-weight="600">🍽️  1000+ Recipes</text>
+    <!-- Pill 2 -->
+    <rect x="186" y="0" width="175" height="46" rx="23" fill="#ffffff" opacity="0.08"/>
+    <rect x="186" y="0" width="175" height="46" rx="23" fill="none" stroke="#6fcf97" stroke-width="1.5"/>
+    <text x="273" y="29" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#6fcf97" text-anchor="middle" font-weight="600">👨‍🍳  Chef Techniques</text>
+    <!-- Pill 3 -->
+    <rect x="379" y="0" width="155" height="46" rx="23" fill="#ffffff" opacity="0.08"/>
+    <rect x="379" y="0" width="155" height="46" rx="23" fill="none" stroke="#6fcf97" stroke-width="1.5"/>
+    <text x="456" y="29" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#6fcf97" text-anchor="middle" font-weight="600">⭐  Step-by-Step</text>
+  </g>
+
+  <!-- URL / brand line -->
+  <text x="72" y="572" font-family="'Trebuchet MS', sans-serif" font-size="16" fill="#ffffff" opacity="0.35" letter-spacing="3">macfood.app</text>
+
+  <!-- ===================== RIGHT: PLATE ILLUSTRATION ===================== -->
+  <g transform="translate(980, 315)">
+
+    <!-- Outer glow circle -->
+    <circle cx="0" cy="0" r="235" fill="none" stroke="#6fcf97" stroke-width="1" opacity="0.18"/>
+
+    <!-- Plate -->
+    <circle cx="0" cy="0" r="210" fill="url(#plateGrad)" filter="url(#plateShadow)"/>
+    <!-- Plate rim shadow -->
+    <circle cx="0" cy="0" r="210" fill="none" stroke="#b2d8c4" stroke-width="4"/>
+    <!-- Plate inner ring -->
+    <circle cx="0" cy="0" r="188" fill="none" stroke="#ddeee5" stroke-width="1.5"/>
+
+    <!-- FOOD: main mound -->
+    <ellipse cx="0" cy="30" rx="120" ry="70" fill="url(#foodGrad)" filter="url(#itemShadow)"/>
+    <!-- Food texture highlights -->
+    <ellipse cx="-20" cy="5" rx="55" ry="28" fill="#f7d070" opacity="0.5"/>
+    <ellipse cx="30" cy="35" rx="30" ry="18" fill="#b86010" opacity="0.25"/>
+
+    <!-- Drizzle lines (sauce) -->
+    <path d="M-60,10 Q-30,-15 0,5 Q30,25 60,10" fill="none" stroke="#c0392b" stroke-width="3.5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M-40,25 Q-10,5 20,20 Q50,35 70,22" fill="none" stroke="#c0392b" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+
+    <!-- Herbs / Microgreens cluster -->
+    <!-- Stem -->
+    <line x1="0" y1="-10" x2="-8" y2="-62" stroke="#1a6e35" stroke-width="2"/>
+    <line x1="0" y1="-10" x2="10" y2="-65" stroke="#1a6e35" stroke-width="2"/>
+    <line x1="0" y1="-10" x2="0" y2="-70" stroke="#1a6e35" stroke-width="2"/>
+    <!-- Leaves -->
+    <path d="M0,-70 Q-22,-58 -8,-48 Q2,-62 0,-70Z" fill="url(#leafGrad)"/>
+    <path d="M10,-65 Q30,-52 18,-42 Q8,-58 10,-65Z" fill="url(#leafGrad)" opacity="0.9"/>
+    <path d="M0,-70 Q14,-50 0,-42 Q-14,-50 0,-70Z" fill="#27ae60" opacity="0.7"/>
+    <!-- Small accent leaves -->
+    <ellipse cx="-30" cy="-20" rx="12" ry="6" fill="url(#leafGrad)" transform="rotate(-40,-30,-20)" opacity="0.7"/>
+    <ellipse cx="32" cy="-18" rx="11" ry="5" fill="url(#leafGrad)" transform="rotate(35,32,-18)" opacity="0.7"/>
+
+    <!-- Lemon wedge accent -->
+    <path d="M90,-60 Q110,-40 95,-20 Q75,-35 90,-60Z" fill="#f9e050" opacity="0.85"/>
+    <path d="M90,-60 Q80,-45 88,-25 Q76,-38 90,-60Z" fill="#f1c40f" opacity="0.5"/>
+    <line x1="90" y1="-60" x2="91" y2="-28" stroke="#c8a000" stroke-width="1" opacity="0.4"/>
+
+    <!-- Small garnish dots -->
+    <circle cx="-80" cy="50" r="5" fill="#e74c3c" opacity="0.75"/>
+    <circle cx="-65" cy="65" r="4" fill="#e74c3c" opacity="0.6"/>
+    <circle cx="-90" cy="63" r="3.5" fill="#e74c3c" opacity="0.5"/>
+
+    <!-- Steam wisps -->
+    <path d="M-30,-80 Q-40,-105 -30,-130" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.15"/>
+    <path d="M0,-85 Q10,-112 0,-140" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.12"/>
+    <path d="M30,-80 Q40,-105 30,-130" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.15"/>
+
+    <!-- Fork shadow on plate -->
+    <rect x="-170" y="-100" width="14" height="195" rx="7" fill="#2a5846" opacity="0.12"/>
+    <!-- Knife shadow on plate -->
+    <rect x="148" y="-100" width="12" height="195" rx="6" fill="#2a5846" opacity="0.12"/>
+  </g>
+
+  <!-- Fork (left of plate) -->
+  <g transform="translate(795, 175)" filter="url(#itemShadow)">
+    <rect x="8" y="130" width="14" height="145" rx="7" fill="#1e4035"/>
+    <rect x="9.5" y="100" width="11" height="38" rx="5" fill="#1e4035"/>
+    <rect x="4" y="28" width="22" height="78" rx="5" fill="#2a5846"/>
+    <rect x="11" y="30" width="4" height="66" rx="2" fill="#1a3328" opacity="0.6"/>
+    <rect x="17.5" y="30" width="4" height="66" rx="2" fill="#1a3328" opacity="0.6"/>
+    <rect x="4" y="12" width="7" height="24" rx="3.5" fill="#2a5846"/>
+    <rect x="13.5" y="12" width="7" height="24" rx="3.5" fill="#2a5846"/>
+    <rect x="23" y="12" width="7" height="24" rx="3.5" fill="#2a5846"/>
+  </g>
+
+  <!-- Knife (right of plate) -->
+  <g transform="translate(1150, 175)" filter="url(#itemShadow)">
+    <rect x="-8" y="130" width="14" height="145" rx="7" fill="#1e4035"/>
+    <path d="M-8,100 L5,100 L5,28 Q5,8 -8,16 Z" fill="#2a5846"/>
+    <path d="M4,30 L5,30 L5,100 L4,100 Z" fill="#6fcf97" opacity="0.3"/>
+  </g>
+
+  <!-- ===================== BOTTOM BORDER ===================== -->
+  <rect x="0" y="600" width="1200" height="30" fill="#1a3328" opacity="0.5"/>
+  <!-- Gold accent strip -->
+  <rect x="0" y="598" width="1200" height="3" fill="url(#goldGrad)" opacity="0.7"/>
+
+  <!-- Bottom text bar -->
+  <text x="600" y="621" font-family="'Trebuchet MS', sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" opacity="0.45" letter-spacing="3">MACFOOD — DISCOVER · COOK · MASTER</text>
+
+  <!-- Top-left corner accent -->
+  <rect x="0" y="0" width="5" height="630" fill="url(#goldGrad)" opacity="0.6"/>
+  <!-- Top border accent -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#goldGrad)" opacity="0.4"/>
+</svg>

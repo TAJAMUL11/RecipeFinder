@@ -16,7 +16,6 @@ A modern, responsive recipe finder web application that helps users discover rec
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript
 - **API**: TheMealDB (free recipe database)
 - **Libraries**: 
-  - Swiper.js - Touch slider for carousel
   - ScrollReveal - Scroll animation library
   - Boxicons - Icon library
 
