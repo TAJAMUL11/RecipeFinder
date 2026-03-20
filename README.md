@@ -25,7 +25,7 @@ A modern, responsive recipe finder web application that helps users discover rec
 
 1. Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/TAJAMUL11/RecipeFinder.git
 cd Recipe_app
 ```
 
